@@ -6,8 +6,12 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-   public class BenefitPackage
+   public  class BenefitPackage
     {
+        public enum BenefitPackageLevel
+        {
+            Standart, Gold, Platinum
+        }
 
         public double ComputerPayDeduction()
         {

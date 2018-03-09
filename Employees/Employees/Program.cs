@@ -23,6 +23,8 @@ namespace Employees
            // (string fullName, int age, int empID, float currPay,string ssn, int numbofopts);
              Manager chuck = new Manager("Chuck", 50, 90, 10000,"", 9000);
             double cost = chuck.GetBenefitCost();
+            Employees.BenefitPackage.BenefitPackageLevel myBenefitPackageLevel = 
+            Employees.BenefitPackage.BenefitPackageLevel.Platinum;
             Console.ReadLine();
            
         
