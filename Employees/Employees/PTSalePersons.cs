@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-    class PTSalePersons
+   sealed class PTSalePersons : SalePersons
     {
+        public int SaleNumbe { get; set; }
+        public PTSalePersons(string fullName, int age, int empID, float currPay, string ssn, int numboSales)
+            : base(fullName, age, empID, currPay, ssn, numboSales)
+        {
+            SaleNumber = numboSales;
+        }
+        public PTSalePersons()
+        { }
     }
 }

@@ -6,16 +6,16 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-    partial class Employee
+    public partial class Employee
     {
         protected string empName;
         protected int empID;
         protected float currPay;
         protected int empAge;
         protected string empSSN;
-
+     
         //Конструкторы
-
+       
         public Employee() { }
         public Employee(string name, int id, float pay)
 

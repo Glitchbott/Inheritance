@@ -6,8 +6,22 @@ using System.Threading.Tasks;
 
 namespace Employees
 {
-    partial class Employee
-    {
+   public partial class Employee
+     {
+       
+        protected BenefitPackage empBenefits = new BenefitPackage();
+
+        public double GetBenefitCost()
+        {
+            return empBenefits.ComputerPayDeduction();
+        }
+        public BenefitPackage Benefits
+        {
+            get { return empBenefits; }
+            set { empBenefits = value; }
+        
+      }
+      
         // метод
         public void GiveBones(float amount)
         {
